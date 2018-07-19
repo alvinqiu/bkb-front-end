@@ -6,7 +6,11 @@ import router from './router'
 import $ from 'jquery'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import 'bootstrap/dist/js/bootstrap.min'
+import axios from 'axios'
+import { JSEncrypt } from 'jsencrypt'
 
+Vue.prototype.$http = axios
+Vue.prototype.$JSEncrypt = new JSEncrypt()
 Vue.config.productionTip = false
 
 /* eslint-disable no-new */
